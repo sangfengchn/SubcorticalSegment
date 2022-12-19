@@ -1,0 +1,9 @@
+Logfile for pctsurfcon
+Sun Mar 27 21:18:35 UTC 2022
+setenv SUBJECTS_DIR /home/sangfeng/Desktop/UKBiobank/Der34/freesurfer
+cd /home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/scripts
+/opt/freesurfer/bin/pctsurfcon
+$Id: pctsurfcon,v 1.15 2016/02/12 21:43:15 zkaufman Exp $
+Linux OptiPlex 5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+FREESURFER_HOME /opt/freesurfer
+Cleaning up

@@ -1,0 +1,1 @@
+mri_convert /home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/mri/rawavg.mgz /home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/mri/orig.mgz --conform

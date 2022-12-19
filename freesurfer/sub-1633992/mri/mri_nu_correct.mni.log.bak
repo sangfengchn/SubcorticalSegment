@@ -1,0 +1,73 @@
+/home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/mri
+/opt/freesurfer/bin/mri_nu_correct.mni
+--no-rescale --i orig.mgz --o orig_nu.mgz --n 1 --proto-iters 1000 --distance 50
+nIters 1
+$Id: mri_nu_correct.mni,v 1.27 2016/02/26 16:19:49 mreuter Exp $
+Linux OptiPlex 5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Fri Mar 25 16:06:30 UTC 2022
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
+tmpdir is ./tmp.mri_nu_correct.mni.936846
+/home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/mri
+mri_convert orig.mgz ./tmp.mri_nu_correct.mni.936846/nu0.mnc -odt float
+mri_convert.bin orig.mgz ./tmp.mri_nu_correct.mni.936846/nu0.mnc -odt float 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from orig.mgz...
+TR=1000.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, -4.30737e-09, 0)
+j_ras = (-1.86265e-09, -7.45058e-09, -1)
+k_ras = (4.5402e-09, 1, 7.45058e-09)
+changing data type from uchar to float (noscale = 0)...
+writing to ./tmp.mri_nu_correct.mni.936846/nu0.mnc...
+ 
+--------------------------------------------------------
+Iteration 1 Fri Mar 25 16:06:31 UTC 2022
+nu_correct -clobber ./tmp.mri_nu_correct.mni.936846/nu0.mnc ./tmp.mri_nu_correct.mni.936846/nu1.mnc -tmpdir ./tmp.mri_nu_correct.mni.936846/0/ -iterations 1000 -distance 50
+[fmriprep@OptiPlex:/home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/mri/] [2022-03-25 16:06:31] running:
+  /opt/freesurfer/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 1000 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 50 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.936846/0/ ./tmp.mri_nu_correct.mni.936846/nu0.mnc ./tmp.mri_nu_correct.mni.936846/nu1.imp
+
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Number of iterations: 24 
+CV of field change: 0.000983448
+ 
+ 
+ 
+mri_convert ./tmp.mri_nu_correct.mni.936846/nu1.mnc orig_nu.mgz --like orig.mgz --conform
+mri_convert.bin ./tmp.mri_nu_correct.mni.936846/nu1.mnc orig_nu.mgz --like orig.mgz --conform 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from ./tmp.mri_nu_correct.mni.936846/nu1.mnc...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, -4.30737e-09, 0)
+j_ras = (-1.86265e-09, -7.45058e-09, -1)
+k_ras = (4.5402e-09, 1, 7.45058e-09)
+INFO: transform src into the like-volume: orig.mgz
+changing data type from float to uchar (noscale = 0)...
+MRIchangeType: Building histogram 
+writing to orig_nu.mgz...
+ 
+ 
+Fri Mar 25 16:06:59 UTC 2022
+mri_nu_correct.mni done

@@ -1,0 +1,128 @@
+status file for recon-all
+Fri Mar 25 16:06:16 UTC 2022
+#@# MotionCor Fri Mar 25 16:06:23 UTC 2022
+#@# Talairach Fri Mar 25 16:06:30 UTC 2022
+#@# Talairach Failure Detection Fri Mar 25 16:07:19 UTC 2022
+#@# Nu Intensity Correction Fri Mar 25 16:07:19 UTC 2022
+#@# Intensity Normalization Fri Mar 25 16:08:17 UTC 2022
+recon-all -s sub-1633992 finished without error at Fri Mar 25 16:09:23 UTC 2022
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Fri Mar 25 16:10:01 UTC 2022
+#@# EM Registration Fri Mar 25 16:10:01 UTC 2022
+#@# CA Normalize Fri Mar 25 16:12:03 UTC 2022
+#@# CA Reg Fri Mar 25 16:13:03 UTC 2022
+#@# SubCort Seg Fri Mar 25 17:20:33 UTC 2022
+#@# Merge ASeg Fri Mar 25 17:50:33 UTC 2022
+#@# Intensity Normalization2 Fri Mar 25 17:50:33 UTC 2022
+#@# Mask BFS Fri Mar 25 17:52:15 UTC 2022
+#@# WM Segmentation Fri Mar 25 17:52:18 UTC 2022
+#@# Fill Fri Mar 25 17:53:30 UTC 2022
+recon-all -s sub-1633992 finished without error at Fri Mar 25 17:53:52 UTC 2022
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Sun Mar 27 21:18:43 UTC 2022
+#@# Cortical ribbon mask Sun Mar 27 21:18:43 UTC 2022
+recon-all -s sub-1633992 finished without error at Sun Mar 27 21:24:12 UTC 2022
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Tue Mar 29 06:27:11 UTC 2022
+#@# Relabel Hypointensities Tue Mar 29 06:27:11 UTC 2022
+#@# AParc-to-ASeg aparc Tue Mar 29 06:27:22 UTC 2022
+#@# AParc-to-ASeg a2009s Tue Mar 29 06:29:59 UTC 2022
+#@# AParc-to-ASeg DKTatlas Tue Mar 29 06:32:36 UTC 2022
+#@# APas-to-ASeg Tue Mar 29 06:35:12 UTC 2022
+#@# ASeg Stats Tue Mar 29 06:35:15 UTC 2022
+#@# WMParc Tue Mar 29 06:35:46 UTC 2022
+recon-all -s sub-1633992 finished without error at Tue Mar 29 06:39:20 UTC 2022
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Thu Mar 31 05:31:39 UTC 2022
+Linux OptiPlex 5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+
+recon-all -s sub-1633992 exited with ERRORS at Thu Mar 31 05:31:39 UTC 2022
+
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Thu Mar 31 05:39:08 UTC 2022
+#@# Hippocampal Subfields processing (T1 only) left Thu Mar 31 05:39:09 UTC 2022
+#@# Hippocampal Subfields processing (T1 only) right Thu Mar 31 05:39:11 UTC 2022
+recon-all -s sub-1633992 finished without error at Thu Mar 31 05:39:14 UTC 2022
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Thu Mar 31 05:40:40 UTC 2022
+#@# Hippocampal Subfields processing (T1 only) left Thu Mar 31 05:40:40 UTC 2022
+#@# Hippocampal Subfields processing (T1 only) right Thu Mar 31 05:40:42 UTC 2022
+recon-all -s sub-1633992 finished without error at Thu Mar 31 05:40:44 UTC 2022
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Thu Mar 31 06:25:51 UTC 2022
+#@# Hippocampal Subfields processing (T1 only) left Thu Mar 31 06:25:51 UTC 2022
+#@# Hippocampal Subfields processing (T1 only) right Thu Mar 31 06:25:53 UTC 2022
+recon-all -s sub-1633992 finished without error at Thu Mar 31 06:25:56 UTC 2022
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Thu Mar 31 06:27:56 UTC 2022
+#@# Hippocampal Subfields processing (T1 only) left Thu Mar 31 06:27:56 UTC 2022
+#@# Hippocampal Subfields processing (T1 only) right Thu Mar 31 06:27:58 UTC 2022
+recon-all -s sub-1633992 finished without error at Thu Mar 31 06:28:01 UTC 2022
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Thu Mar 31 06:30:39 UTC 2022
+#@# Hippocampal Subfields processing (T1 only) left Thu Mar 31 06:30:39 UTC 2022
+#@# Hippocampal Subfields processing (T1 only) right Thu Mar 31 06:41:55 UTC 2022
+recon-all -s sub-1633992 finished without error at Thu Mar 31 06:53:31 UTC 2022

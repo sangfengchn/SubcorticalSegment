@@ -1,0 +1,162 @@
+/home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/mri
+/opt/freesurfer/bin/mri_nu_correct.mni
+--i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --n 2
+nIters 2
+$Id: mri_nu_correct.mni,v 1.27 2016/02/26 16:19:49 mreuter Exp $
+Linux OptiPlex 5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Fri Mar 25 16:07:19 UTC 2022
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
+tmpdir is ./tmp.mri_nu_correct.mni.937380
+/home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/mri
+mri_convert orig.mgz ./tmp.mri_nu_correct.mni.937380/nu0.mnc -odt float
+mri_convert.bin orig.mgz ./tmp.mri_nu_correct.mni.937380/nu0.mnc -odt float 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from orig.mgz...
+TR=1000.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, -4.30737e-09, 0)
+j_ras = (-1.86265e-09, -7.45058e-09, -1)
+k_ras = (4.5402e-09, 1, 7.45058e-09)
+changing data type from uchar to float (noscale = 0)...
+writing to ./tmp.mri_nu_correct.mni.937380/nu0.mnc...
+ 
+--------------------------------------------------------
+Iteration 1 Fri Mar 25 16:07:20 UTC 2022
+nu_correct -clobber ./tmp.mri_nu_correct.mni.937380/nu0.mnc ./tmp.mri_nu_correct.mni.937380/nu1.mnc -tmpdir ./tmp.mri_nu_correct.mni.937380/0/
+[fmriprep@OptiPlex:/home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/mri/] [2022-03-25 16:07:20] running:
+  /opt/freesurfer/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 50 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 200 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.937380/0/ ./tmp.mri_nu_correct.mni.937380/nu0.mnc ./tmp.mri_nu_correct.mni.937380/nu1.imp
+
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Number of iterations: 18 
+CV of field change: 0.000976498
+ 
+ 
+--------------------------------------------------------
+Iteration 2 Fri Mar 25 16:07:40 UTC 2022
+nu_correct -clobber ./tmp.mri_nu_correct.mni.937380/nu1.mnc ./tmp.mri_nu_correct.mni.937380/nu2.mnc -tmpdir ./tmp.mri_nu_correct.mni.937380/1/
+[fmriprep@OptiPlex:/home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/mri/] [2022-03-25 16:07:40] running:
+  /opt/freesurfer/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 50 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 200 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.937380/1/ ./tmp.mri_nu_correct.mni.937380/nu1.mnc ./tmp.mri_nu_correct.mni.937380/nu2.imp
+
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Number of iterations: 11 
+CV of field change: 0.000956722
+ 
+ 
+ 
+mri_binarize --i ./tmp.mri_nu_correct.mni.937380/nu2.mnc --min -1 --o ./tmp.mri_nu_correct.mni.937380/ones.mgz
+
+$Id: mri_binarize.c,v 1.43 2016/06/09 20:46:21 greve Exp $
+cwd /home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/mri
+cmdline mri_binarize.bin --i ./tmp.mri_nu_correct.mni.937380/nu2.mnc --min -1 --o ./tmp.mri_nu_correct.mni.937380/ones.mgz 
+sysname  Linux
+hostname OptiPlex
+machine  x86_64
+user     fmriprep
+
+input      ./tmp.mri_nu_correct.mni.937380/nu2.mnc
+frame      0
+nErode3d   0
+nErode2d   0
+output     ./tmp.mri_nu_correct.mni.937380/ones.mgz
+Binarizing based on threshold
+min        -1
+max        +infinity
+binval        1
+binvalnot     0
+fstart = 0, fend = 0, nframes = 1
+Found 16777216 values in range
+Counting number of voxels in first frame
+Found 16777216 voxels in final mask
+Count: 16777216 16777216.000000 16777216 100.000000
+mri_binarize done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.937380/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.937380/sum.junk --avgwf ./tmp.mri_nu_correct.mni.937380/input.mean.dat
+
+$Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.937380/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.937380/sum.junk --avgwf ./tmp.mri_nu_correct.mni.937380/input.mean.dat 
+sysname  Linux
+hostname OptiPlex
+machine  x86_64
+user     fmriprep
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.937380/ones.mgz
+Loading orig.mgz
+Voxel Volume is 1 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+  0
+Writing to ./tmp.mri_nu_correct.mni.937380/input.mean.dat
+mri_segstats done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.937380/ones.mgz --i ./tmp.mri_nu_correct.mni.937380/nu2.mnc --sum ./tmp.mri_nu_correct.mni.937380/sum.junk --avgwf ./tmp.mri_nu_correct.mni.937380/output.mean.dat
+
+$Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.937380/ones.mgz --i ./tmp.mri_nu_correct.mni.937380/nu2.mnc --sum ./tmp.mri_nu_correct.mni.937380/sum.junk --avgwf ./tmp.mri_nu_correct.mni.937380/output.mean.dat 
+sysname  Linux
+hostname OptiPlex
+machine  x86_64
+user     fmriprep
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.937380/ones.mgz
+Loading ./tmp.mri_nu_correct.mni.937380/nu2.mnc
+Voxel Volume is 1 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+  0
+Writing to ./tmp.mri_nu_correct.mni.937380/output.mean.dat
+mri_segstats done
+mris_calc -o ./tmp.mri_nu_correct.mni.937380/nu2.mnc ./tmp.mri_nu_correct.mni.937380/nu2.mnc mul 1.02853445541713062756
+mri_convert ./tmp.mri_nu_correct.mni.937380/nu2.mnc nu.mgz --like orig.mgz
+mri_convert.bin ./tmp.mri_nu_correct.mni.937380/nu2.mnc nu.mgz --like orig.mgz 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from ./tmp.mri_nu_correct.mni.937380/nu2.mnc...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, -4.30737e-09, 0)
+j_ras = (-1.86265e-09, -7.45058e-09, -1)
+k_ras = (4.5402e-09, 1, 7.45058e-09)
+INFO: transform src into the like-volume: orig.mgz
+writing to nu.mgz...
+mri_make_uchar nu.mgz transforms/talairach.xfm nu.mgz
+type change took 0 minutes and 4 seconds.
+mapping ( 5, 108) to ( 3, 110)
+ 
+ 
+Fri Mar 25 16:08:17 UTC 2022
+mri_nu_correct.mni done

@@ -1,0 +1,38 @@
+status file for recon-all
+Sun Mar 27 20:37:55 UTC 2022
+#@# Tessellate rh Sun Mar 27 20:37:55 UTC 2022
+#@# Smooth1 rh Sun Mar 27 20:37:57 UTC 2022
+#@# Inflation1 rh Sun Mar 27 20:38:00 UTC 2022
+#@# QSphere rh Sun Mar 27 20:38:09 UTC 2022
+#@# Fix Topology Copy rh Sun Mar 27 20:39:12 UTC 2022
+#@# Fix Topology rh Sun Mar 27 20:39:12 UTC 2022
+#@# Make White Surf rh Sun Mar 27 20:44:13 UTC 2022
+#@# Smooth2 rh Sun Mar 27 20:47:02 UTC 2022
+#@# Inflation2 rh Sun Mar 27 20:47:05 UTC 2022
+#@# Curv .H and .K rh Sun Mar 27 20:47:14 UTC 2022
+#@# Curvature Stats rh Sun Mar 27 20:47:56 UTC 2022
+#@# Sphere rh Sun Mar 27 20:47:58 UTC 2022
+#@# Surf Reg rh Sun Mar 27 20:52:18 UTC 2022
+#@# Jacobian white rh Sun Mar 27 21:10:40 UTC 2022
+#@# AvgCurv rh Sun Mar 27 21:10:41 UTC 2022
+#@# Cortical Parc rh Sun Mar 27 21:10:41 UTC 2022
+#@# Make Pial Surf rh Sun Mar 27 21:10:48 UTC 2022
+#@# Surf Volume rh Sun Mar 27 21:18:17 UTC 2022
+#@# Cortical Parc 2 rh Sun Mar 27 21:18:19 UTC 2022
+#@# Cortical Parc 3 rh Sun Mar 27 21:18:28 UTC 2022
+#@# WM/GM Contrast rh Sun Mar 27 21:18:35 UTC 2022
+recon-all -s sub-1633992 finished without error at Sun Mar 27 21:18:39 UTC 2022
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Tue Mar 29 06:23:34 UTC 2022
+#@# Parcellation Stats rh Tue Mar 29 06:23:34 UTC 2022
+#@# Parcellation Stats 2 rh Tue Mar 29 06:24:06 UTC 2022
+#@# Parcellation Stats 3 rh Tue Mar 29 06:24:23 UTC 2022
+#@# BA_exvivo Labels rh Tue Mar 29 06:24:39 UTC 2022
+recon-all -s sub-1633992 finished without error at Tue Mar 29 06:27:07 UTC 2022

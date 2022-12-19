@@ -1,0 +1,1 @@
+mris_inflate -rusage /home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/touch/rusage.mris_inflate.rh.dat ../surf/rh.smoothwm ../surf/rh.inflated

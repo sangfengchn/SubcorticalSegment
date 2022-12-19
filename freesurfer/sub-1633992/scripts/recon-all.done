@@ -1,0 +1,13 @@
+------------------------------
+SUBJECT sub-1633992
+START_TIME Thu Mar 31 06:30:38 UTC 2022
+END_TIME Thu Mar 31 06:53:31 UTC 2022
+RUNTIME_HOURS 0.381
+USER root
+HOST OptiPlex
+PROCESSOR x86_64
+OS Linux
+UNAME Linux OptiPlex 5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+VERSION $Id: recon-all,v 1.580.2.16 2017/01/18 14:11:24 zkaufman Exp $
+CMDPATH /opt/freesurfer/bin/recon-all
+CMDARGS -s sub-1633992 -hippocampal-subfields-T1

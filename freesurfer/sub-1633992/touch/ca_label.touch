@@ -1,0 +1,1 @@
+mri_cc -aseg aseg.auto_noCCseg.mgz -o aseg.auto.mgz -lta /home/sangfeng/Desktop/UKBiobank/Der34/freesurfer/sub-1633992/mri/transforms/cc_up.lta sub-1633992
